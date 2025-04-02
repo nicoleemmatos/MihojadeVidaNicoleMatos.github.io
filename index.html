@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja de vida Nicole Matos</title>
+
+    <!--CSS-->
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        /*estilo del cuerpo de la pagina */
+        body {
+            font-family: Arial;
+            margin: 0;
+        }
+
+        /*header/logo y titulo*/
+        .header {
+            padding: 60px;
+            text-align: center;
+            background: #5d0dc0;
+            color: rgb(134, 2, 2)
+        }
+
+        /*estilo de la barra de navegacion*/
+        .navbar {
+            display: flex;
+            background-color: #333;
+        }
+
+        /*estilos de los enlaces de la barar de navegacion*/
+        .navbar a{
+            color: white;
+            padding: 14px 20px ;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        /*cambiar el color cuando paso el mouse */
+        .navbar a:hover{
+            background-color: #ddd;
+            color: black;
+        }
+
+        /*contenedor de columnas*/
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        /*Barra lateral */
+        .side{
+            flex: 30%;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+
+        /*columna principal*/
+        .main{
+            flex: 70%;
+            background-color: white;
+            padding: 20px;
+        }
+
+        /*imagenes falsas*/
+        .imagenfalsa{
+            background-color: #aaa;
+            width: 100px;
+            padding: 20px;
+        }
+
+        /*footer*/
+        .footer{
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+        }
+
+      /*Responsive Layout - when the screen is less than 700px wide, make the two column stack on top of each other instead of next to each other*/
+      @media and(max-width: 700px) {
+        .row
+        .navbar{
+            flex-direction: column;
+        }
+      } 
+
+    </style>
+</head>
+<body>
+    <div style="background: rgb(0,255,179));padding: 5px;">
+<h4 style="text-align: center;">Mi hoja de Vida</h4>
+</div>
+
+<!--Header-->
+<div class="header">
+    <h1>Nicole Matos</h1>
+    <p>Estudiante de <b>6to A</b></p>
+</div>
+
+<!--Barra de navegacion-->
+<div class="navbar">
+    <a href="">inicio</a>
+    <a href="">Aspiraciones</a>
+    <a href="">Contacto</a>
+</div>
+    
+<!--Contenido-->
+<div class="row">
+    <div class="side">
+        <h2>Acerca de mi</h2>
+        <h5>Mi foto</h5>
+        <div class="" style="height: 200px;"><img src="ft/IMG_9555.jpeg" alt="mujer" width="150"></div>
+        <p>tengo 17 años de edad</p>
+        <h3>Hobbies</h3>
+        <p>Desde chiquta me ha gustado realizar actividades creativas  como hacer manualidades, pintar y cocinar.</p>
+        <div class="" style="height: 60px;"><img src="ft/pintura-og.webp" alt="pintura" width="120"></div>
+        <div class="" style="height: 60px;"><img src="ft/manualidades-cartulina.webp" alt="manualidades" width="120"></div>
+        <div class="" style="height: 60px;"><img src="ft/fotonoticia_20181010083733_690.jpg" alt="cocinar" width="120"></div>
+    </div>
+
+    <div class="main">
+        <h2>Fecha y lugar de nacimiento</h2>
+        <h5>Naci el 8 de diciembre del 2007 en Republica Dominicana, Santo Domingo</h5>
+        <div class="" style="height: 200px;"><img src="ft/Flag_of_the_Dominican_Republic.svg.webp" alt="domi" width="160"></div>
+       
+        <p>Mi país, la República Dominicana, es un lugar que llevo en el corazón. Sus playas, montañas y la calidez de su gente me llenan de orgullo. Cada rincón de esta tierra refleja mi identidad y siempre me siento agradecido por ser parte de ella.</p>
+        <br>
+        <h2>Profesión soñada</h2>
+        <h5>Mi Carrera soñada es ser odontologa y estudiar en la Universidad UNIBE</h5>
+        <div class="" style="height: 200px;"><img src="ft/Universidad-Iberoamericana-UNIBE.jpg" alt="u" width="200"></div>
+        <p></p>
+        <p>Aspiro a crecer y forjar mi camino como una odontóloga apasionada y comprometida, brindando ayuda a los demás e impactando positivamente en sus vidas, superando desafíos y aprendiendo de cada experiencia.</p> 
+    </div>
+</div>
+
+<!--footer-->
+<div class="footer">
+    <h2></h2>
+</div>
+
+</body>
+</html>
